@@ -16,6 +16,11 @@ export default defineType({
       type: 'string',
     }),
     defineField({
+      name: 'companyLink',
+      title: 'Company Link',
+      type: 'url',
+    }),
+    defineField({
       name: 'dateStarted',
       title: 'Date Started',
       type: 'date',
