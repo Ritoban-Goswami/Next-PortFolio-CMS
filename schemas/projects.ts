@@ -11,6 +11,16 @@ export default defineType({
       type: 'string',
     }),
     defineField({
+      name: 'projectSlug',
+      title: 'Project Slug',
+      type: 'slug',
+      options: {
+        source: 'projectTitle',
+        maxLength: 200, // will be ignored if slugify is set
+        slugify: (input) => input.toLowerCase().replace(/\s+/g, '-').slice(0, 200),
+      },
+    }),
+    defineField({
       name: 'projectImage',
       title: 'Project Image',
       type: 'image',
