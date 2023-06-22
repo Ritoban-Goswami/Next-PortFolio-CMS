@@ -14,6 +14,10 @@ export default defineType({
       name: 'linkUrl',
       title: 'Link Url',
       type: 'url',
+      validation: (Rule) =>
+        Rule.uri({
+          scheme: ['http', 'https', 'mailto', 'tel'],
+        }),
     }),
   ],
 })
