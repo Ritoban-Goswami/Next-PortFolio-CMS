@@ -29,9 +29,14 @@ export default defineType({
       },
     }),
     defineField({
+      name: 'projectShortDescription',
+      title: 'Project Short Description',
+      type: 'text',
+    }),
+    defineField({
       name: 'projectDescription',
       title: 'Project Description',
-      type: 'text',
+      type: 'blockContent',
     }),
     defineField({
       name: 'usedTechnologies',
