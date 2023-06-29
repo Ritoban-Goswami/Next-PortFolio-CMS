@@ -54,5 +54,10 @@ export default defineType({
       title: 'Link To Source',
       type: 'url',
     }),
+    defineField({
+      name: 'projectInProgress',
+      title: 'Project In Progress?',
+      type: 'boolean',
+    }),
   ],
 })
